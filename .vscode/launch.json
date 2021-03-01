@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PingPong",
+            "request": "launch",
+            "mainClass": "PingPong"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BasicEncrypt",
+            "request": "launch",
+            "mainClass": "BasicEncrypt"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Thirteen",
+            "request": "launch",
+            "mainClass": "Thirteen"
+        }
+    ]
+}
