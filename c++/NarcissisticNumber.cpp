@@ -7,6 +7,15 @@ class MainClass {
 };
 
 bool MainClass::narcissistic(int value) {
+    int count = 0;
+    while (value != 0)
+    {
+        int newValue = value / 10;
+        count++;
+    }
+
+    cout << count << endl;
+    
     return true;
 }
 
