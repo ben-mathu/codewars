@@ -1,31 +1,44 @@
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Random;
+import java.math.BigInteger;
 
 public class StripComments {
+    private static final Random RANDOM = new Random();
 
 	public static String stripComments(String text, String[] commentSymbols) {
-        Pattern pattern;
-        Matcher matcher;
-
-        String replacedString = "";
+        String stringComments = "";
+        for (int i = 0; i < commentSymbols.length; i++) {
+            stringComments += commentSymbols[i];
+        }
         String[] elementsWithNewLine = text.split("\n");
-        for (int j = 0; j < elementsWithNewLine.length; j++) {
-            for (int i = 0; i < commentSymbols.length; i++) {
-                pattern = Pattern.compile("(\\w+[,.]+ \\w+) (" + commentSymbols[i] + " \\w+( \\w+)+\n)");
-                matcher = pattern.matcher(elementsWithNewLine[j]);
-    
-                if (matcher.find()) {
-                    replacedString += matcher.group(1).trim() + "\n";
-                } else {
-                    replacedString += elementsWithNewLine[j] + "\n";
-                }
+        String replacedString = "";
+        for (int i = 0; i < elementsWithNewLine.length; i++) {
+            replacedString += elementsWithNewLine[i]
+                .replaceAll("[ ]*([" + stringComments + "].*)?$", "");
+            if (i != elementsWithNewLine.length - 1) {
+                replacedString += "\n";
             }
         }
-		return replacedString;
+        return replacedString;
 	}
 
     public static void main(String[] args) {
-        System.out.println(StripComments.stripComments("apples, pears # and bananas\ngrapes\nbananas !apples", new String[] { "#", "!" }));
+        String clearText = StripComments.stripComments(
+            "apples, pears # and bananas\ngrapes\nbananas !apples",
+            new String[] { "#", "!" });
+        System.out.println(clearText);
+
+        String[] comments = { "#", "$", "!", "-" };
+
+        String test = randomString().replace( "1", comments[RANDOM.nextInt( 4 )] )
+          .replace( "0", "\n" )
+          .replaceAll( "\n+$", "" );
+
+        System.out.println(test);
+    }
+
+    private static String randomString() {
+        return new BigInteger( 1000, RANDOM ).toString( 16 )
+            .replaceAll( "[2-9]+", "\n\n" );
     }
 	
 }
