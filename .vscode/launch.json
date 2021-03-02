@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Challenge",
+            "request": "launch",
+            "mainClass": "Challenge",
+            "projectName": "CodeWar_fddb165e"
+        },
+        {
+            "type": "java",
+            "name": "Launch StrUtils",
+            "request": "launch",
+            "mainClass": "StrUtils",
+            "projectName": "CodeWar_fddb165e"
+        },
+        {
+            "type": "java",
             "name": "Launch StripComments",
             "request": "launch",
             "mainClass": "StripComments",
