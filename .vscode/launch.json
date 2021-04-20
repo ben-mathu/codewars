@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch KGoodnessString",
+            "request": "launch",
+            "mainClass": "KGoodnessString",
+            "projectName": "CodeWars_a9d71879"
+        },
+        {
+            "type": "java",
             "name": "Launch Challenge",
             "request": "launch",
             "mainClass": "Challenge",
