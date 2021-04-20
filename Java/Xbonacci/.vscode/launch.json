@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Xbonacci",
+            "request": "launch",
+            "mainClass": "Xbonacci"
+        }
+    ]
+}

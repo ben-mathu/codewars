@@ -1,0 +1,6 @@
+c++/builds
+
+**/bin
+**/obj
+*.iml
+.idea
