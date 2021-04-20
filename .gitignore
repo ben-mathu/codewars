@@ -4,3 +4,4 @@ c++/builds
 **/obj
 *.iml
 .idea
+**/a.out
