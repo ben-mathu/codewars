@@ -13,5 +13,9 @@
         "utility": "cpp",
         "valarray": "cpp",
         "ostream": "cpp"
-    }
+    },
+    "java.project.sourcePaths": [
+        "Java/conditional_statements",
+        "Java/reading_stdout"
+    ]
 }
