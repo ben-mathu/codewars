@@ -12,7 +12,8 @@
         "ranges": "cpp",
         "utility": "cpp",
         "valarray": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     },
     "java.project.sourcePaths": [
         "Java/conditional_statements",
