@@ -6,13 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch ReadWrite",
-            "request": "launch",
-            "mainClass": "ReadWrite",
-            "projectName": "CodeWars_bd87b5d5"
-        },
-        {
-            "type": "java",
             "name": "Launch Solution",
             "request": "launch",
             "mainClass": "Solution",

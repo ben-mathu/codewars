@@ -16,7 +16,8 @@
         "iostream": "cpp"
     },
     "java.project.sourcePaths": [
+        "Java/reading_stdout",
         "Java/conditional_statements",
-        "Java/reading_stdout"
+        "HackerRank/competitive-gaming"
     ]
 }

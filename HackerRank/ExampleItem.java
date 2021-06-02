@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Solution {
+public class ExampleItem {
     public static long nearlySimilarRectangles(List<List<Long>> sides) {
         int count = 0;
         Long tempNumerator = 0L;
@@ -30,7 +30,7 @@ public class Solution {
         List<List<Long>> sides = Arrays.asList(Arrays.asList(4L,8L),
             Arrays.asList(15L,30L),
             Arrays.asList(25L,50L));
-        Long count = Solution.nearlySimilarRectangles(sides);
+        Long count = ExampleItem.nearlySimilarRectangles(sides);
         System.out.println(count);
     }
 }
